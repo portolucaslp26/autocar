@@ -4,7 +4,7 @@ mat-toolbar {
 
 a {
   // text-decoration: none;
-  color: #dc3545
+  color: #fff
 }
  #logo-header {
   width: 150px;
@@ -18,6 +18,16 @@ a {
   // text-decoration: underline;
  }
 
- #contactHeader {
+@media screen and (max-width: 460px) {
+  #black-nav {
+    height: 200px !important;
+    & i {
+      margin-right: 0 !important;
+    }
+  }
 
- }
+  .icon-wrapper {
+    margin-right: 20px !important;
+  }
+
+}
