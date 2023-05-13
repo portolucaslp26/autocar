@@ -7,12 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { AngularMaterialModule } from './angular-material.module';
 import { SobreComponent } from './sobre/sobre.component';
+import { ListaCarrosComponent } from './lista-carros/lista-carros.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
    ],
   imports: [
     BrowserModule,
