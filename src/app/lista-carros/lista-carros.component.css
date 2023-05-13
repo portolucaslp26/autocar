@@ -14,3 +14,8 @@
 .card-text {
   margin-top: 10px;
 }
+
+mat-paginator {
+  margin-bottom: -48px;
+  margin-top: 30px;
+}

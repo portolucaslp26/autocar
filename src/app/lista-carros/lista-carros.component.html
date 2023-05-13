@@ -1,61 +1,77 @@
 <div class="container mt-5">
   <div class="row d-flex justify-content-around">
     <div class="col-4">
-      <form class="mt-5">
+      <form class="mt-5" #listaCarros="ngForm">
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label text-light">Código do veículo</label>
-          <input type="text" class="form-control bg-dark text-light border-danger" id="exampleFormControlInput1" placeholder="Código">
+          <input type="text" name="codigo" [(ngModel)]="codigo" class="form-control bg-dark text-light border-danger" id="exampleFormControlInput1" placeholder="Código">
         </div>
 
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label text-light">Tipo de veículo</label>
-          <select class="form-select bg-dark text-light border-danger w-100" aria-label="Default select example">
-            <option selected>Todos os tipos</option>
+          <select placeholder="Selecione um tipo" class="form-select bg-dark text-light border-danger w-100" [(ngModel)]="tipo" name="tipo" id="exampleFormControlInput1" aria-label="Default select example">
+            <option value=""></option>
+            <option value="Entre em contato via WhatsApp para verificar estoque completo">Entre em contato via WhatsApp para verificar estoque completo</option>
+          <option value="Kit Air Bag - ENTRE EM CONTATO VIA WHATSAPP PARA VERIFICAR ESTOQUE COMPLETO">Kit Air Bag - ENTRE EM CONTATO VIA WHATSAPP PARA VERIFICAR ESTOQUE COMPLETO</option>
+          <option value="Peças - ENTRE EM CONTATO VIA WHATSAPP PARA VERIFICAR ESTOQUE COMPLETO">Peças - ENTRE EM CONTATO VIA WHATSAPP PARA VERIFICAR ESTOQUE COMPLETO</option>
           </select>
         </div>
 
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label text-light">Marca</label>
-          <select class="form-select bg-dark text-light border-danger w-100" aria-label="Default select example">
-            <option selected>Selecione um tipo</option>
+          <select class="form-select bg-dark text-light border-danger w-100"
+            placeholder="Selecione um tipo" [(ngModel)]="marca" name="marca" id="exampleFormControlInput1" aria-label="Default select example">
+            <option value=""></option>
+            <option value="Renault">Renault</option>
+            <option value="Kia">Kia</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Honda">Honda</option>
+            <option value="Audi">Audi</option>
+            <option value="Hyundai">Hyundai</option>
           </select>
         </div>
 
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label text-light">Modelos</label>
-          <select class="form-select bg-dark text-light border-danger w-100" aria-label="Default select example">
-            <option selected>Selecione uma marca</option>
+          <select placeholder="Selecione uma marca" class="form-select bg-dark text-light border-danger w-100" [(ngModel)]="modelo" name="modelo" id="exampleFormControlInput1" aria-label="Default select example">
+            <option value=""></option>
+            <option [value]="modelo" *ngFor="let modelo of modelos">{{modelo}}</option>
           </select>
         </div>
 
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label text-light">Status do veículo</label>
-          <select class="form-select bg-dark text-light border-danger w-100" aria-label="Default select example">
-            <option selected>Todos</option>
+          <select placeholder="Todos" class="form-select bg-dark text-light border-danger w-100" [(ngModel)]="status" name="status" id="exampleFormControlInput1" aria-label="Default select example">
+            <option value=""></option>
+            <option value="novo">Novo</option>
+            <option value="seminovo">Seminovo</option>
+            <option value="usado">Usado</option>
           </select>
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label text-light">Portas</label>
-          <select class="form-select bg-dark text-light border-danger w-100" aria-label="Default select example">
-            <option selected>Todas</option>
+          <select placeholder="Todas" class="form-select bg-dark text-light border-danger w-100" [(ngModel)]="portas" name="portas" id="exampleFormControlInput1" aria-label="Default select example">
+            <option value=""></option>
+            <option value="2">2</option>
+            <option value="4">4</option>
           </select>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
           <div class="mb-3 col-6">
             <label for="exampleFormControlInput1" class="form-label text-light">Preço Mín.</label>
-            <input type="text" class="form-control bg-dark text-light border-danger" id="exampleFormControlInput1" placeholder="Código">
+            <input type="text" class="form-control bg-dark text-light border-danger"  id="exampleFormControlInput1" placeholder="Código">
           </div>
           <div class="mb-3 col-6">
             <label for="exampleFormControlInput1" class="form-label text-light">Preço Máx.</label>
             <input type="text" class="form-control bg-dark text-light border-danger" id="exampleFormControlInput1" placeholder="Código">
           </div>
-        </div>
+        </div> -->
         <div class="row">
           <div class="mb-3 col-6">
             <label for="exampleFormControlInput1" class="form-label text-light">Ano de</label>
-            <select class="form-select bg-dark text-light border-danger w-100" aria-label="Default select example">
-              <option selected>Ano de</option>
+            <select placeholder="Ano de" class="form-select bg-dark text-light border-danger w-100" [(ngModel)]="anoDe" name="ano" id="exampleFormControlInput1" aria-label="Default select example">
+            <option value=""></option>
               <option value="2010">2010</option>
               <option value="2011">2011</option>
               <option value="2012">2012</option>
@@ -72,8 +88,8 @@
           </div>
           <div class="mb-3 col-6">
             <label for="exampleFormControlInput1" class="form-label text-light">Ano até.</label>
-            <select class="form-select bg-dark text-light border-danger w-100" aria-label="Default select example">
-              <option selected>Ano até</option>
+            <select placeholder="Ano até" class="form-select bg-dark text-light border-danger w-100" [(ngModel)]="anoAte" name="ano" id="exampleFormControlInput1" aria-label="Default select example">
+            <option value=""></option>
               <option value="2010">2010</option>
               <option value="2011">2011</option>
               <option value="2012">2012</option>
@@ -89,10 +105,11 @@
             </select>
           </div>
         </div>
+        <button class="btn btn-danger" type="button" (click)="filtrarCarros(codigo, tipo, marca, modelo, status, portas, anoDe, anoAte, carros)">Buscar</button>
       </form>
     </div>
     <div class="col-4 mt-5" >
-      <div class="card border-danger" *ngFor="let carro of carrosPaginados">
+      <div class="card border-danger mb-5" *ngFor="let carro of carrosPaginados">
         <img src="../../assets/img/logo.jpeg" class="card-img-top" alt="...">
         <div class="card-body bg-dark text-light">
           <h5 class="card-title fw-bold text-danger">{{ carro.modelo }}</h5>
