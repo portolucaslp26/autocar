@@ -1,0 +1,119 @@
+<div class="container mt-5">
+  <div class="row d-flex justify-content-around">
+    <div class="col-4">
+      <form class="mt-5">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label text-light">Código do veículo</label>
+          <input type="text" class="form-control bg-dark text-light border-danger" id="exampleFormControlInput1" placeholder="Código">
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label text-light">Tipo de veículo</label>
+          <select class="form-select bg-dark text-light border-danger w-100" aria-label="Default select example">
+            <option selected>Todos os tipos</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label text-light">Marca</label>
+          <select class="form-select bg-dark text-light border-danger w-100" aria-label="Default select example">
+            <option selected>Selecione um tipo</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label text-light">Modelos</label>
+          <select class="form-select bg-dark text-light border-danger w-100" aria-label="Default select example">
+            <option selected>Selecione uma marca</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label text-light">Status do veículo</label>
+          <select class="form-select bg-dark text-light border-danger w-100" aria-label="Default select example">
+            <option selected>Todos</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label text-light">Portas</label>
+          <select class="form-select bg-dark text-light border-danger w-100" aria-label="Default select example">
+            <option selected>Todas</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <div class="mb-3 col-6">
+            <label for="exampleFormControlInput1" class="form-label text-light">Preço Mín.</label>
+            <input type="text" class="form-control bg-dark text-light border-danger" id="exampleFormControlInput1" placeholder="Código">
+          </div>
+          <div class="mb-3 col-6">
+            <label for="exampleFormControlInput1" class="form-label text-light">Preço Máx.</label>
+            <input type="text" class="form-control bg-dark text-light border-danger" id="exampleFormControlInput1" placeholder="Código">
+          </div>
+        </div>
+        <div class="row">
+          <div class="mb-3 col-6">
+            <label for="exampleFormControlInput1" class="form-label text-light">Ano de</label>
+            <select class="form-select bg-dark text-light border-danger w-100" aria-label="Default select example">
+              <option selected>Ano de</option>
+              <option value="2010">2010</option>
+              <option value="2011">2011</option>
+              <option value="2012">2012</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+            </select>
+          </div>
+          <div class="mb-3 col-6">
+            <label for="exampleFormControlInput1" class="form-label text-light">Ano até.</label>
+            <select class="form-select bg-dark text-light border-danger w-100" aria-label="Default select example">
+              <option selected>Ano até</option>
+              <option value="2010">2010</option>
+              <option value="2011">2011</option>
+              <option value="2012">2012</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-4 mt-5" >
+      <div class="card border-danger" *ngFor="let carro of carrosPaginados">
+        <img src="../../assets/img/logo.jpeg" class="card-img-top" alt="...">
+        <div class="card-body bg-dark text-light">
+          <h5 class="card-title fw-bold text-danger">{{ carro.modelo }}</h5>
+          <p class="card-text">RETIRADA DE PEÇAS AUTO PEÇAS PROCEDÊNCIA GARANTIDA!!! TODAS AS PEÇAS DO VEÍCULO A VENDA MOTOR, CÂMBIO, SUSPENSÃO, LATARIA, ACABAMENTOS, FRISOS, FORRAÇÕES, BANCOS, VIDROS, MÓDULOS, SENSORES, CHICOTES, BORRACHAS, CORREI...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<mat-paginator #paginator
+               class="demo-paginator"
+               (page)="handlePageEvent($event)"
+               [length]="length"
+               [pageSize]="pageSize"
+               [disabled]="disabled"
+               [showFirstLastButtons]="showFirstLastButtons"
+               [pageSizeOptions]="showPageSizeOptions ? pageSizeOptions : []"
+               [hidePageSize]="hidePageSize"
+               [pageIndex]="pageIndex"
+               aria-label="Select page">
+</mat-paginator>
+
+
