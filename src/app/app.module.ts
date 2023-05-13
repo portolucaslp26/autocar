@@ -6,12 +6,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { AngularMaterialModule } from './angular-material.module';
+import { SobreComponent } from './sobre/sobre.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
    ],
   imports: [
     BrowserModule,
