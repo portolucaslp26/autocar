@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'autocar';
+
+  constructor(private router: Router) {
+
+  }
   year = new Date().getFullYear();
   scrollToTop() {
     window.scroll({
@@ -14,5 +19,17 @@ export class AppComponent {
       left: 0,
       behavior: 'smooth'
     });
+  }
+
+  goToHome() {
+    this.router.navigate(['home']);
+  }
+
+  goToContato() {
+    this.router.navigate(['contato']);
+  }
+
+  goToSobre() {
+    this.router.navigate(['sobre']);
   }
 }
