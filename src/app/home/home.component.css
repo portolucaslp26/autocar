@@ -16,6 +16,10 @@
   height: 228px;
 }
 
+.card-carousel {
+  min-height: 420px;
+}
+
 .example-container form {
   margin-bottom: 20px;
 }
