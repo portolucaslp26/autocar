@@ -13,7 +13,7 @@ export const PRODUTOS = [
   {
     "codigoRef": 555536,
     "titulo": "Kit Air Bag GM Onix",
-    "tipo": "Entre em contato via WhatsApp para verificar estoque completo",
+    "tipo": "Kit Air Bag - ENTRE EM CONTATO VIA WHATSAPP PARA VERIFICAR ESTOQUE COMPLETO",
     "modelo": "PRISMA SEDAN LTZ 1.4 FLEX AUT 2014/2015",
     "cor": null,
     "portas": null,
@@ -46,7 +46,7 @@ export const PRODUTOS = [
   {
     "codigoRef": 63512,
     "titulo": "Kit Air Bag Hyundai Creta 2020",
-    "tipo": "Entre em contato via WhatsApp para verificar estoque completo",
+    "tipo": "Kit Air Bag - ENTRE EM CONTATO VIA WHATSAPP PARA VERIFICAR ESTOQUE COMPLETO",
     "modelo": "Hyundai Ix35 2015 Mpfi Gls",
     "cor": "Preto",
     "portas": 4,
@@ -79,7 +79,7 @@ export const PRODUTOS = [
   {
     "codigoRef": 55685,
     "titulo": "Kit Air Bag Jeep Compass 2021",
-    "tipo": "Entre em contato via WhatsApp para verificar estoque completo",
+    "tipo": "Kit Air Bag - ENTRE EM CONTATO VIA WHATSAPP PARA VERIFICAR ESTOQUE COMPLETO",
     "modelo": "Jeep Compass Diesel 2020",
     "cor": null,
     "portas": 4,
@@ -101,7 +101,7 @@ export const PRODUTOS = [
   {
     "codigoRef": 6351245,
     "titulo": "Volante Honda Civic G10",
-    "tipo": "Entre em contato via WhatsApp para verificar estoque completo",
+    "tipo": "Peças - ENTRE EM CONTATO VIA WHATSAPP PARA VERIFICAR ESTOQUE COMPLETO",
     "modelo": "Volante Honda Civic G10",
     "cor": "Prata",
     "portas": 4,
@@ -139,6 +139,17 @@ export const PRODUTOS = [
     "cor": "Cinza",
     "portas": 4,
     "marca": "Honda",
+    "ano": 2019,
+    "disponivel": true
+  },
+  {
+    "codigoRef": 6532581,
+    "titulo": "Sucata Captur Motor 1.6 2018 2019",
+    "tipo": "Entre em contato via WhatsApp para verificar estoque completo",
+    "modelo": "Captur Motor 1.6 2018 2019",
+    "cor": "Marrom",
+    "portas": 4,
+    "marca": "Renault",
     "ano": 2019,
     "disponivel": true
   }
