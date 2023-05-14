@@ -22,6 +22,7 @@ export class HomeComponent implements OnInit {
   }
 
   filtrar(codigoRef: any, tipo: any, marca: any, modelo: any, status: any, portas: any, anoDe: any, anoAte: any) {
+    // debugger
     const filtro = {
       codigoRef: codigoRef ?? null,
       tipo: tipo ?? null,
@@ -32,7 +33,6 @@ export class HomeComponent implements OnInit {
       anoDe: anoDe ?? null,
       anoAte: anoAte ?? null
     }
-    console.log(filtro)
     this.router.navigate(['lista-carros'], { queryParams: filtro });
 
   }
