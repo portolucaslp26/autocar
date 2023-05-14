@@ -3,16 +3,17 @@ import { CommonModule } from '@angular/common';
 import { ListaCarrosComponent } from './lista-carros.component';
 import { ListaCarrosRoutingModule } from './lista-carros-routing.module';
 import { AngularMaterialModule } from '../angular-material.module';
-import { PaginatorComponent } from './paginator/paginator.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
     ListaCarrosRoutingModule,
     AngularMaterialModule,
+    FormsModule
 
   ],
-  declarations: [ListaCarrosComponent, PaginatorComponent],
+  declarations: [ListaCarrosComponent],
 
 })
 export class ListaCarrosModule { }
