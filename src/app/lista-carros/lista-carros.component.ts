@@ -19,14 +19,14 @@ export class ListaCarrosComponent implements OnInit {
   showFirstLastButtons = true;
   disabled = false;
   pageEvent!: PageEvent;
-  codigo: any;
-  anoDe: any
-  anoAte: any
-  marca: any
-  portas: any
-  status: any
-  modelo: any
-  tipo: any
+  codigo: any = '';
+  anoDe: any = ''
+  anoAte: any = ''
+  marca: any = ''
+  portas: any = ''
+  status: any = ''
+  modelo: any = ''
+  tipo: any = ''
   modelos: any[] = [];
   constructor(
     public catalog: CatalogoService,
