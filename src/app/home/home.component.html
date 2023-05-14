@@ -1,13 +1,13 @@
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div id="carousel-item1" class="carousel-item active">
-      <img src="../../assets/img/bg-test.jpg" class="d-block w-100 img-fluid" alt="...">
+      <img src="../../assets/img/bg-1.jpg" class="d-block w-100 img-fluid" alt="...">
     </div>
     <div id="carousel-item1" class="carousel-item">
-      <img src="../../assets/img/bg-test.jpg" class="d-block w-100 img-fluid" alt="...">
+      <img src="../../assets/img/bg-1.jpg" class="d-block w-100 img-fluid" alt="...">
     </div>
     <div id="carousel-item1" class="carousel-item">
-      <img src="../../assets/img/bg-test.jpg" class="d-block w-100 img-fluid" alt="...">
+      <img src="../../assets/img/bg-1.jpg" class="d-block w-100 img-fluid" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -81,7 +81,7 @@
         </select>
       </div>
       <div class="example-form-fields me-2">
-        <button class="btn btn-dangerr text-dark border-danger" (click)="filtrar(codigo, tipo, marca, modelo, status, portas, anoDe, anoAte)" type="button">Buscar</button>
+        <button class="btn btn-dangerr text-light border-danger" (click)="filtrar(codigo, tipo, marca, modelo, status, portas, anoDe, anoAte)" type="button">Buscar</button>
       </div>
     </form>
   </div>
@@ -102,37 +102,37 @@
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
           <div class="col d-flex justify-content-center">
             <div class="card border-danger mb-4">
-              <img src="../../assets/img/logo.jpeg" class="card-img-top" alt="...">
+              <img [src]="carros[0].imagens[0]" class="card-img-top" alt="...">
               <div class="card-body bg-dark text-light">
-                <h5 class="card-title fw-bold">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title text-danger fw-bold">{{carros[0].titulo}}</h5>
+                <p class="card-text">{{carros[0].titulo}}</p>
               </div>
             </div>
           </div>
           <div class="col d-flex justify-content-center">
             <div class="card border-danger mb-4">
-              <img src="../../assets/img/logo.jpeg" class="card-img-top" alt="...">
+              <img [src]="carros[1].imagens[0]" class="card-img-top" alt="...">
               <div class="card-body bg-dark text-light">
-                <h5 class="card-title fw-bold">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title text-danger fw-bold">{{carros[1].titulo}}</h5>
+                <p class="card-text">{{carros[1].titulo}}</p>
               </div>
             </div>
           </div>
           <div class="col d-flex justify-content-center">
             <div class="card border-danger mb-4">
-              <img src="../../assets/img/logo.jpeg" class="card-img-top" alt="...">
+              <img [src]="carros[2].imagens[0]" class="card-img-top" alt="...">
               <div class="card-body bg-dark text-light">
-                <h5 class="card-title fw-bold">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title text-danger fw-bold">{{carros[2].titulo}}</h5>
+                <p class="card-text">{{carros[2].titulo}}</p>
               </div>
             </div>
           </div>
           <div class="col d-flex justify-content-center">
             <div class="card border-danger mb-4">
-              <img src="../../assets/img/logo.jpeg" class="card-img-top" alt="...">
+              <img [src]="carros[3].imagens[0]" class="card-img-top" alt="...">
               <div class="card-body bg-dark text-light">
-                <h5 class="card-title fw-bold">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title text-danger fw-bold">{{carros[3].titulo}}</h5>
+                <p class="card-text">{{carros[3].titulo}}</p>
               </div>
             </div>
           </div>
@@ -142,37 +142,37 @@
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
           <div class="col d-flex justify-content-center">
             <div class="card border-danger mb-4">
-              <img src="../../assets/img/logo.jpeg" class="card-img-top" alt="...">
+              <img [src]="carros[4].imagens[0]" class="card-img-top" alt="...">
               <div class="card-body bg-dark text-light">
-                <h5 class="card-title fw-bold">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title text-danger  fw-bold">{{carros[4].titulo}}</h5>
+                <p class="card-text">{{carros[4].titulo}}</p>
               </div>
             </div>
           </div>
           <div class="col d-flex justify-content-center">
             <div class="card border-danger mb-4">
-              <img src="../../assets/img/logo.jpeg" class="card-img-top" alt="...">
+              <img [src]="carros[5].imagens[0]" class="card-img-top" alt="...">
               <div class="card-body bg-dark text-light">
-                <h5 class="card-title fw-bold">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title text-danger fw-bold">{{carros[5].titulo}}</h5>
+                <p class="card-text">{{carros[5].titulo}}</p>
               </div>
             </div>
           </div>
           <div class="col d-flex justify-content-center">
             <div class="card border-danger mb-4">
-              <img src="../../assets/img/logo.jpeg" class="card-img-top" alt="...">
+              <img [src]="carros[6].imagens[0]" class="card-img-top" alt="...">
               <div class="card-body bg-dark text-light">
-                <h5 class="card-title fw-bold">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title text-danger fw-bold">{{carros[6].titulo}}</h5>
+                <p class="card-text">{{carros[6].titulo}}</p>
               </div>
             </div>
           </div>
           <div class="col d-flex justify-content-center">
             <div class="card border-danger mb-4">
-              <img src="../../assets/img/logo.jpeg" class="card-img-top" alt="...">
+              <img [src]="carros[7].imagens[0]" class="card-img-top" alt="...">
               <div class="card-body bg-dark text-light">
-                <h5 class="card-title fw-bold">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title text-danger fw-bold">{{carros[7].titulo}}</h5>
+                <p class="card-text">{{carros[7].titulo}}</p>
               </div>
             </div>
           </div>
@@ -198,37 +198,37 @@
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-5">
       <div class="col d-flex justify-content-center">
         <div class="card border-danger">
-          <img src="../../assets/img/logo.jpeg" class="card-img-top" alt="...">
+          <img [src]="carros[8].imagens[0]" class="card-img-top" alt="...">
           <div class="card-body bg-dark text-light">
-            <h5 class="card-title fw-bold">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title text-danger fw-bold">{{carros[8].titulo}}</h5>
+            <p class="card-text">{{carros[8].titulo}}</p>
           </div>
         </div>
       </div>
       <div class="col d-flex justify-content-center">
         <div class="card border-danger">
-          <img src="../../assets/img/logo.jpeg" class="card-img-top" alt="...">
+          <img [src]="carros[9].imagens[0]" class="card-img-top" alt="...">
           <div class="card-body bg-dark text-light">
-            <h5 class="card-title fw-bold">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title text-danger fw-bold">{{carros[9].titulo}}</h5>
+            <p class="card-text">{{carros[9].titulo}}</p>
           </div>
         </div>
       </div>
       <div class="col d-flex justify-content-center">
         <div class="card border-danger">
-          <img src="../../assets/img/logo.jpeg" class="card-img-top" alt="...">
+          <img [src]="carros[10].imagens[0]" class="card-img-top" alt="...">
           <div class="card-body bg-dark text-light">
-            <h5 class="card-title fw-bold">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title text-danger fw-bold">{{carros[10].titulo}}</h5>
+            <p class="card-text">{{carros[10].titulo}}</p>
           </div>
         </div>
       </div>
       <div class="col d-flex justify-content-center">
         <div class="card border-danger">
-          <img src="../../assets/img/logo.jpeg" class="card-img-top" alt="...">
+          <img [src]="carros[11].imagens[0]" class="card-img-top" alt="...">
           <div class="card-body bg-dark text-light">
-            <h5 class="card-title fw-bold">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title text-danger fw-bold">{{carros[11].titulo}}</h5>
+            <p class="card-text">{{carros[11].titulo}}</p>
           </div>
         </div>
       </div>
@@ -251,37 +251,37 @@
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-5">
       <div class="col d-flex justify-content-center">
         <div class="card border-danger">
-          <img src="../../assets/img/logo.jpeg" class="card-img-top" alt="...">
+          <img [src]="carros[12].imagens[0]" class="card-img-top" alt="...">
           <div class="card-body bg-dark text-light">
-            <h5 class="card-title fw-bold">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title text-danger fw-bold">{{carros[12].titulo}}</h5>
+            <p class="card-text">{{carros[12].titulo}}</p>
           </div>
         </div>
       </div>
       <div class="col d-flex justify-content-center">
         <div class="card border-danger">
-          <img src="../../assets/img/logo.jpeg" class="card-img-top" alt="...">
+          <img [src]="carros[13].imagens[0]" class="card-img-top" alt="...">
           <div class="card-body bg-dark text-light">
-            <h5 class="card-title fw-bold">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title text-danger fw-bold">{{carros[13].titulo}}</h5>
+            <p class="card-text">{{carros[13].titulo}}</p>
           </div>
         </div>
       </div>
       <div class="col d-flex justify-content-center">
         <div class="card border-danger">
-          <img src="../../assets/img/logo.jpeg" class="card-img-top" alt="...">
+          <img [src]="carros[0].imagens[0]" class="card-img-top" alt="...">
           <div class="card-body bg-dark text-light">
-            <h5 class="card-title fw-bold">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title text-danger fw-bold">{{carros[0].titulo}}</h5>
+            <p class="card-text">{{carros[0].titulo}}</p>
           </div>
         </div>
       </div>
       <div class="col d-flex justify-content-center">
         <div class="card border-danger">
-          <img src="../../assets/img/logo.jpeg" class="card-img-top" alt="...">
+          <img [src]="carros[1].imagens[0]" class="card-img-top" alt="...">
           <div class="card-body bg-dark text-light">
-            <h5 class="card-title fw-bold">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title text-danger fw-bold">{{carros[1].titulo}}</h5>
+            <p class="card-text">{{carros[1].titulo}}</p>
           </div>
         </div>
       </div>
@@ -301,13 +301,13 @@
         <div class="card card-lateral bg-dark text-light border-danger mb-3">
           <div class="row g-0 align-items-stretch">
             <div class="col-md-4">
-              <img src="https://via.placeholder.com/150" alt="..." class="img-fluid img-card-lateral h-100">
+              <img src="../../assets/img/card-b-1.jpg" alt="..." class="img-fluid img-card-lateral h-100">
             </div>
             <div class="col-md-8">
               <div class="card-body ">
-                <h5 class="card-title fw-bold">Card Title</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id risus vitae ipsum sagittis feugiat. Donec tincidunt sed elit non faucibus.</p>
-                <button class="btn btn-dangerr text-dark">Botão</button>
+                <h5 class="card-title text-danger fw-bold">Card Title</h5>
+                <p class="card-text">Entre em contato agora mesmo através do WhatsApp para encontra o que você precisa.</p>
+                <button class="btn btn-dangerr text-light">Saiba Mais</button>
               </div>
             </div>
           </div>
@@ -317,13 +317,13 @@
         <div class="card card-lateral bg-dark text-light border-danger mb-3">
           <div class="row g-0 align-items-stretch">
             <div class="col-md-4">
-              <img src="https://via.placeholder.com/150" alt="..." class="img-fluid img-card-lateral h-100">
+              <img src="../../assets/img/card-b-2.jpg" alt="..." class="img-fluid img-card-lateral h-100">
             </div>
             <div class="col-md-8">
               <div class="card-body bg-dark text-light border-danger">
-                <h5 class="card-title fw-bold">Card Title</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id risus vitae ipsum sagittis feugiat. Donec tincidunt sed elit non faucibus.</p>
-                <button class="btn btn-dangerr text-dark">Botão</button>
+                <h5 class="card-title text-danger fw-bold">Card Title</h5>
+                <p class="card-text">Informe as características do veículo desejado e entraremos em contato com você.</p>
+                <button class="btn btn-dangerr text-light">Saiba Mais</button>
               </div>
             </div>
           </div>
@@ -338,11 +338,11 @@
       <div class="card card-lateral bg-dark text-light border-danger mb-3">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="https://via.placeholder.com/150" alt="..." class="img-fluid img-card-lateral">
+            <img src="../../assets/img/card-b-1.jpg" alt="..." class="img-fluid img-card-lateral">
           </div>
           <div class="col-md-8">
             <div class="card-body ">
-              <h5 class="card-title fw-bold">Card Title</h5>
+              <h5 class="card-title text-danger fw-bold">Card Title</h5>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id risus vitae ipsum sagittis feugiat. Donec tincidunt sed elit non faucibus.</p>
               <button class="btn btn-dangerr text-dark">Botão</button>
             </div>
@@ -358,7 +358,7 @@
           </div>
           <div class="col-md-8">
             <div class="card-body bg-dark text-light border-danger">
-              <h5 class="card-title fw-bold">Card Title</h5>
+              <h5 class="card-title text-danger fw-bold">Card Title</h5>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id risus vitae ipsum sagittis feugiat. Donec tincidunt sed elit non faucibus.</p>
               <button class="btn btn-dangerr text-dark">Botão</button>
             </div>

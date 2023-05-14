@@ -8,7 +8,10 @@ export const PRODUTOS = [
     "portas": 4,
     "marca": "Audi",
     "ano": 2011,
-    "disponivel": true
+    "disponivel": true,
+    "imagens": [
+      '../../assets/img/cars/651289/001.jpeg'
+    ]
   },
   {
     "codigoRef": 555536,
@@ -19,7 +22,10 @@ export const PRODUTOS = [
     "portas": null,
     "marca": "Chevrolet",
     "ano": 2017,
-    "disponivel": true
+    "disponivel": true,
+    "imagens": [
+      '../../assets/img/cars/555536/001.png'
+    ]
   },
   {
     "codigoRef": 453265,
@@ -30,7 +36,10 @@ export const PRODUTOS = [
     "portas": 4,
     "marca": "Honda",
     "ano": 2013,
-    "disponivel": true
+    "disponivel": true,
+    "imagens": [
+      '../../assets/img/cars/453265/001.jpeg'
+    ]
   },
   {
     "codigoRef": 657591,
@@ -41,7 +50,10 @@ export const PRODUTOS = [
     "portas": 4,
     "marca": "Jeep",
     "ano": 2022,
-    "disponivel": true
+    "disponivel": true,
+    "imagens": [
+      '../../assets/img/cars/657591/001.png'
+    ]
   },
   {
     "codigoRef": 63512,
@@ -52,7 +64,10 @@ export const PRODUTOS = [
     "portas": 4,
     "marca": "Hyundai",
     "ano": 2020,
-    "disponivel": true
+    "disponivel": true,
+    "imagens": [
+      '../../assets/img/cars/63512/001.png'
+    ]
   },
   {
     "codigoRef": 6515745,
@@ -63,7 +78,10 @@ export const PRODUTOS = [
     "portas": 2,
     "marca": "Volkswagen",
     "ano": 2014,
-    "disponivel": true
+    "disponivel": true,
+    "imagens": [
+      '../../assets/img/cars/6515745/001.png'
+    ]
   },
   {
     "codigoRef": 3946992,
@@ -74,7 +92,10 @@ export const PRODUTOS = [
     "portas": 4,
     "marca": "Hyundai",
     "ano": 2015,
-    "disponivel": true
+    "disponivel": true,
+    "imagens": [
+      '../../assets/img/cars/'
+    ]
   },
   {
     "codigoRef": 55685,
@@ -85,7 +106,10 @@ export const PRODUTOS = [
     "portas": 4,
     "marca": "Jeep",
     "ano": 2021,
-    "disponivel": true
+    "disponivel": true,
+    "imagens": [
+      '../../assets/img/cars/55685/001.png'
+    ]
   },
   {
     "codigoRef": 563145,
@@ -96,7 +120,10 @@ export const PRODUTOS = [
     "portas": 4,
     "marca": "Toyota",
     "ano": 2015,
-    "disponivel": true
+    "disponivel": true,
+    "imagens": [
+      '../../assets/img/cars/563145/001.jpg'
+    ]
   },
   {
     "codigoRef": 6351245,
@@ -107,7 +134,10 @@ export const PRODUTOS = [
     "portas": 4,
     "marca": "Honda",
     "ano": 2019,
-    "disponivel": true
+    "disponivel": true,
+    "imagens": [
+      '../../assets/img/cars/6351245/2-06-13-100622.png'
+    ]
   },
   {
     "codigoRef": 6512435,
@@ -118,7 +148,10 @@ export const PRODUTOS = [
     "portas": 4,
     "marca": "Hyundai",
     "ano": 2010,
-    "disponivel": true
+    "disponivel": true,
+    "imagens": [
+      '../../assets/img/cars/6512435/001.jpeg'
+    ]
   },
   {
     "codigoRef": 563795,
@@ -129,7 +162,10 @@ export const PRODUTOS = [
     "portas": 4,
     "marca": "Kia",
     "ano": 2011,
-    "disponivel": true
+    "disponivel": true,
+    "imagens": [
+      '../../assets/img/cars/563795/001.jpg'
+    ]
   },
   {
     "codigoRef": 6535124,
@@ -140,7 +176,10 @@ export const PRODUTOS = [
     "portas": 4,
     "marca": "Honda",
     "ano": 2019,
-    "disponivel": true
+    "disponivel": true,
+    "imagens": [
+      '../../assets/img/cars/6535124/001.jpeg'
+    ]
   },
   {
     "codigoRef": 6532581,
@@ -151,7 +190,10 @@ export const PRODUTOS = [
     "portas": 4,
     "marca": "Renault",
     "ano": 2019,
-    "disponivel": true
+    "disponivel": true,
+    "imagens": [
+      '../../assets/img/cars/6532581/001.jpg'
+    ]
   }
 ]
 

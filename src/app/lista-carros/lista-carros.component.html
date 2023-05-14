@@ -128,7 +128,7 @@
     </div>
     <div class="col-6 col-lg-4 mt-5">
       <div class="card border-danger mb-5" *ngFor="let carro of catalog.carrosPaginados">
-        <img src="../../assets/img/logo.jpeg" class="card-img-top" alt="...">
+        <img [src]="carro.imagens[0]" class="card-img-top" alt="...">
         <div class="card-body bg-dark text-light">
           <h5 class="card-title fw-bold text-danger">{{ carro.titulo }}</h5>
           <p class="card-text">RETIRADA DE PEÇAS AUTO PEÇAS PROCEDÊNCIA GARANTIDA!!! TODAS AS PEÇAS DO VEÍCULO A VENDA

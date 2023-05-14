@@ -52,6 +52,8 @@ export class ListaCarrosComponent implements OnInit {
     this.carros.forEach((carro: any) => {
       this.modelos.push(carro.modelo)
     })
+
+    console.log(this.catalog.carrosPaginados[0].imagens[0])
   }
 
   handlePageEvent(e: PageEvent) {

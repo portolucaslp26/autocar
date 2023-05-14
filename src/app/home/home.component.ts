@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { PRODUTOS } from 'src/assets/json/produtos';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  carros = PRODUTOS;
+
   codigo: any = '';
   anoDe: any = ''
   anoAte: any = ''
