@@ -17,7 +17,7 @@ a {
 }
 
 .card-img-top {
-  width: 300px;
+  width: 100% !important;
   height: 228px;
 }
 
