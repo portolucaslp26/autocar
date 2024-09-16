@@ -88,3 +88,9 @@ a {
   flex: 0 0 auto;
   max-width: 66.666666%;
 }
+
+@media screen and (max-width: 460px) {
+  #carousel-item1 {
+    height: 160px !important;
+  }
+}
